@@ -1,0 +1,13 @@
+debug: false
+spring:
+  artemis:
+    mode: native
+    #broker-url: tcp://10.8.51.209:31453  # namespace amq-test
+    broker-url: tcp://10.8.51.209:31616?reconnectAttempts=-1&retryInterval=5000&retryIntervalMultiplier=2.0&maxRetryInterval=60000&connectAttempts=5 # namespace amq-leaderfollower
+    #broker-url: tcp://10.8.51.209:30613?reconnectAttempts=-1;retryInterval=5000;retryIntervalMultiplier=2.0;maxRetryInterval=60000;connectAttempts=5 #ha
+    user: 5Er3v8NU
+    password: NPrGOi6e
+jms:
+  listener:
+    auto-startup: true
+    session-cache-size: 5
